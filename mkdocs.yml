@@ -85,8 +85,6 @@ markdown_extensions:
   - toc:
       permalink: true
   # Added Grid support
-  - pymdownx.blocks.caption
-  - pymdownx.blocks.grid
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
