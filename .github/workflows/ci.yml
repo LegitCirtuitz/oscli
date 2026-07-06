@@ -10,11 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetches all history so mkdocs can track changes
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+      - uses: actions/cache@v4 # Properly configures the cache
+        with:
+          key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-redirects
-      - run: pip install mkdocs-minify-plugin
+      - run: pip install mkdocs-material mkdocs-redirects mkdocs-minify-plugin
       - run: mkdocs gh-deploy --force
