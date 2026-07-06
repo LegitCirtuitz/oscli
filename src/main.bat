@@ -80,6 +80,7 @@ timeout /t 2 >nul
 goto :success
 
 :success
+call installmsys.bat
 echo.
 call cli.bat
 
