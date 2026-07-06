@@ -125,6 +125,5 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Home: index.md
   - Getting Started:
     - Introduction: intro.md
