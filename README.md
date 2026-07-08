@@ -1,3 +1,2 @@
-# OS CLI
-A Command Line interface built from batch, for all operating systems.
-Converted from Batch to Bash.
+# MP CLI
+MPCLI is a Multi Purepose Command Line interface, built for Windows in batch.
